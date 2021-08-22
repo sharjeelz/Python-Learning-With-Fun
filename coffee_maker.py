@@ -1,5 +1,7 @@
 print("KARAK CHAI MAKER")
 is_machine_on = True
+is_record_good = True
+reputation = 2
 profit = 10
 CURRENCY = "DHS"
 MENU = {
@@ -49,10 +51,29 @@ def is_payment_done(money, cost, qty):
             profit += cost * qty
             return True
         else:
-            print("Dude! I dont have change, sorry")
+            print("Dude! I don't have change, sorry")
             return False
     else:
         print(f"Sorry that's not enough money.{money} {CURRENCY} refunded.")
+        payment_other = input("Do you want to pay via card? Yes, Or No ").lower()
+        if payment_other == "yes":
+            print("-----------Done--------------")
+            return True
+        else:
+            payment_other = input("Do you want to pay later ? Yes, Or No ").lower()
+            if payment_other == "yes":
+                if reputation == 0:
+                    global is_record_good
+                    is_record_good = False
+                if is_record_good:
+                    print("-----------Done--------------")
+                    return True
+                else:
+                    print("You have a bad reputation, you keep asking to pay later")
+                    return False
+            else:
+                print("SORRY!")
+
         return False
 
 
@@ -89,6 +110,8 @@ while is_machine_on:
             payment = process_coins()
             if is_payment_done(payment, drink["cost"], quantity):
                 make_tea(choice, drink["ingredients"], quantity)
+            else:
+                print("Please choose again!")
         else:
             missing_ingredient = input("Welcome to counter, what is it that is missing from the machine? "
                                        "water, milk, tea ?").lower()
@@ -96,4 +119,5 @@ while is_machine_on:
                 continue
 
     else:
-        print("Hey!!!!!!!!!!!! What are you doing")
+        print("Hey!!!!!!!!!!!! What are you doing, don't hit machine")
+        reputation -= 1
