@@ -1,6 +1,6 @@
 print("KARAK CHAI MAKER")
 is_machine_on = True
-profit = 0
+profit = 10
 CURRENCY = "DHS"
 MENU = {
     "karak": {
@@ -44,9 +44,13 @@ def is_payment_done(money, cost, qty):
     global profit
     if money >= cost * qty:
         change = money - cost * qty
-        print(f"here is your change {change} {CURRENCY} ")
-        profit += cost * qty
-        return True
+        if profit > change:
+            print(f"here is your change {change} {CURRENCY} ")
+            profit += cost * qty
+            return True
+        else:
+            print("Dude! I dont have change, sorry")
+            return False
     else:
         print(f"Sorry that's not enough money.{money} {CURRENCY} refunded.")
         return False
