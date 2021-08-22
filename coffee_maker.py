@@ -45,7 +45,7 @@ def is_payment_done(money, cost, qty):
     if money >= cost * qty:
         change = money - cost * qty
         print(f"here is your change {change} {CURRENCY} ")
-        profit += cost
+        profit += cost * qty
         return True
     else:
         print(f"Sorry that's not enough money.{money} {CURRENCY} refunded.")
