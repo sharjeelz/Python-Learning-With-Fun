@@ -42,7 +42,7 @@ def process_coins():
 
 def is_payment_done(money, cost, qty):
     global profit
-    if money >= cost:
+    if money >= cost * qty:
         change = money - cost * qty
         print(f"here is your change {change} {CURRENCY} ")
         profit += cost
