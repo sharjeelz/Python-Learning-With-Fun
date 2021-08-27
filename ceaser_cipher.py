@@ -1,14 +1,24 @@
-# A Program that will demostrate loops, if else , lists in python.
-# This script allows to encrypt and decrypt your messages and have fun with friends
-
-# Feel Free to Fork and lets make it more strong encoder!
-
 alphabet = [
 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
 ]
+
+
+logo = '''
+
+ _        ___ ______  _____       ___  ____     __  ____   __ __  ____  ______ 
+| |      /  _]      |/ ___/      /  _]|    \   /  ]|    \ |  |  ||    \|      |
+| |     /  [_|      (   \_      /  [_ |  _  | /  / |  D  )|  |  ||  o  )      |
+| |___ |    _]_|  |_|\__  |    |    _]|  |  |/  /  |    / |  ~  ||   _/|_|  |_|
+|     ||   [_  |  |  /  \ |    |   [_ |  |  /   \_ |    \ |___, ||  |    |  |  
+|     ||     | |  |  \    |    |     ||  |  \     ||  .  \|     ||  |    |  |  
+|_____||_____| |__|   \___|    |_____||__|__|\____||__|\_||____/ |__|    |__|  
+                                                                               
+
+'''
+print(logo)
 
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type Message:\n")
