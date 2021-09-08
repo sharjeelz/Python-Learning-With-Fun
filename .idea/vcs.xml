@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/forks/Color-game-in-Python-using-Tkinter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/forks/Pharmacy-Management-system-using-Tkinter-and-csv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/forks/Restaurant-Management-System-Python-" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/forks/Traffic-Signal-Violation-Detection-System" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/forks/WhatsappBOT" vcs="Git" />
   </component>
 </project>

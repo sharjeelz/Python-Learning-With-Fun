@@ -1,6 +1,5 @@
 import tkinter
 import tkinter as tk
-import math
 
 screen = tk.Tk()
 
